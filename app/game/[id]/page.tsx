@@ -16,13 +16,13 @@ export default function GamePage({ params }: { params: { id: string } }) {
   const [gameState, setGameState] = useState({
     myTurn: true,
     myCards: [
-      { id: 1, suit: "copa", value: 7, image: "/cards/7-copa.png" },
-      { id: 2, suit: "espada", value: 10, image: "/cards/10-espada.png" },
-      { id: 3, suit: "oro", value: 10, image: "/cards/10-oro.png" },
+      { id: 1, suit: "copa", value: 7, image: "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80" },
+      { id: 2, suit: "espada", value: 10, image: "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80" },
+      { id: 3, suit: "oro", value: 10, image: "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80" },
     ],
     tableCards: [],
     opponentName: "gui39",
-    opponentAvatar: "/avatars/default.png",
+    opponentAvatar: "https://images.unsplash.com/photo-1511367461989-f85a21fda167?auto=format&fit=facearea&w=256&h=256&facepad=2",
     points: { player: 0, opponent: 0 },
     currentBet: 15,
     messages: [{ id: 1, user: "gui39", text: "Real Envido", timestamp: new Date().toISOString() }],
