@@ -11,7 +11,7 @@ import { AvatarFallback } from "@/components/ui/avatar"
 const MOCK_RANKING = [
   { position: 4, player: "matias3134", avatar: "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=facearea&w=256&h=256&facepad=2", points: 152 },
   { position: 5, player: "leandro7981", avatar: "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=facearea&w=256&h=256&facepad=2", points: 137 },
-  { position: 6, player: "oriana175", avatar: "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=facearea&w=256&h=256&facepad=2", points: 137 },
+  { position: 6, player: "oriana176", avatar: "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=facearea&w=256&h=256&facepad=2", points: 137 },
 ]
 
 export function WeeklyRanking() {
