@@ -106,7 +106,7 @@ export default function GamePage({ params }: { params: { id: string } }) {
             >
               <div className="relative">
                 <img
-                  src={gameState.opponentAvatar || "/placeholder.svg"}
+                  src={gameState.opponentAvatar || "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=facearea&w=256&h=256&facepad=2"}
                   alt={gameState.opponentName}
                   className="w-12 h-12 rounded-full border-2 border-primary"
                 />
@@ -125,7 +125,7 @@ export default function GamePage({ params }: { params: { id: string } }) {
                     className="w-14 h-20 bg-blue-900 rounded-md border border-blue-700 shadow-md transform"
                     style={{ transformStyle: "preserve-3d" }}
                   >
-                    <div className="absolute inset-0 bg-[url('/cards/back.png')] bg-cover rounded-md"></div>
+                    <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80')] bg-cover rounded-md"></div>
                   </motion.div>
                 ))}
               </div>
@@ -142,7 +142,7 @@ export default function GamePage({ params }: { params: { id: string } }) {
                   className="w-16 h-24"
                 >
                   <img
-                    src={card.image || "/placeholder.svg"}
+                    src={card.image || "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80"}
                     alt={`${card.value} de ${card.suit}`}
                     className="w-full h-full object-contain"
                   />

@@ -50,7 +50,7 @@ export function GameCards({ cards, onCardPlay, isMyTurn }: GameCardsProps) {
           style={{ transformStyle: "preserve-3d" }}
         >
           <img
-            src={card.image || "/placeholder.svg"}
+            src={card.image || "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80"}
             alt={`${card.value} de ${card.suit}`}
             className="w-full h-full object-contain rounded-md shadow-md"
           />

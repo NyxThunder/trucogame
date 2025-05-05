@@ -16,14 +16,18 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-gradient-to-b from-background/80 to-background relative overflow-hidden">
       {/* Background pattern */}
-      <div className="absolute inset-0 bg-[url('/patterns/card-pattern.png')] opacity-5 bg-repeat z-0"></div>
+      <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/diamond-upholstery.png')] opacity-5 bg-repeat z-0"></div>
 
       {/* Main content */}
       <div className="relative z-10">
         <div className="container mx-auto px-4">
           <div className="flex justify-between items-center py-4">
             <div className="flex items-center gap-2">
-              <img src="/logo.png" alt="Truco Club Logo" className="h-16" />
+              <img
+                src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=128&q=80"
+                alt="Truco Club Logo"
+                className="h-16"
+              />
             </div>
             <div className="flex items-center gap-4">
               {isLoggedIn ? (

@@ -9,14 +9,14 @@ import { Card } from "@/components/ui/card"
 
 // Mock data for game tables
 const MOCK_TABLES = [
-  { id: 1, player: "uriel1357", avatar: "/avatars/avatar1.png", bet: 15, maxPlayers: 2, currentPlayers: 1 },
-  { id: 2, player: "Fulanito_823", avatar: "/avatars/avatar2.png", bet: 15, maxPlayers: 2, currentPlayers: 1 },
-  { id: 3, player: "lucas12116", avatar: "/avatars/avatar3.png", bet: 15, maxPlayers: 2, currentPlayers: 1 },
-  { id: 4, player: "javier5220", avatar: "/avatars/avatar4.png", bet: 30, maxPlayers: 4, currentPlayers: 3 },
-  { id: 5, player: "LaMurallaDelO", avatar: "/avatars/avatar5.png", bet: 30, maxPlayers: 2, currentPlayers: 1 },
-  { id: 6, player: "leo4477", avatar: "/avatars/avatar6.png", bet: 30, maxPlayers: 2, currentPlayers: 1 },
-  { id: 7, player: "matias15252", avatar: "/avatars/avatar7.png", bet: 30, maxPlayers: 2, currentPlayers: 1 },
-  { id: 8, player: "juan28281", avatar: "/avatars/avatar8.png", bet: 30, maxPlayers: 2, currentPlayers: 1 },
+  { id: 1, player: "uriel1357", avatar: "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=facearea&w=256&h=256&facepad=2", bet: 15, maxPlayers: 2, currentPlayers: 1 },
+  { id: 2, player: "Fulanito_823", avatar: "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=facearea&w=256&h=256&facepad=2", bet: 15, maxPlayers: 2, currentPlayers: 1 },
+  { id: 3, player: "lucas12116", avatar: "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=facearea&w=256&h=256&facepad=2", bet: 15, maxPlayers: 2, currentPlayers: 1 },
+  { id: 4, player: "javier5220", avatar: "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=facearea&w=256&h=256&facepad=2", bet: 30, maxPlayers: 4, currentPlayers: 3 },
+  { id: 5, player: "LaMurallaDelO", avatar: "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=facearea&w=256&h=256&facepad=2", bet: 30, maxPlayers: 2, currentPlayers: 1 },
+  { id: 6, player: "leo4477", avatar: "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=facearea&w=256&h=256&facepad=2", bet: 30, maxPlayers: 2, currentPlayers: 1 },
+  { id: 7, player: "matias15252", avatar: "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=facearea&w=256&h=256&facepad=2", bet: 30, maxPlayers: 2, currentPlayers: 1 },
+  { id: 8, player: "juan28281", avatar: "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=facearea&w=256&h=256&facepad=2", bet: 30, maxPlayers: 2, currentPlayers: 1 },
 ]
 
 export function GameTables() {
@@ -32,7 +32,7 @@ export function GameTables() {
     const newTable = {
       id: tables.length + 1,
       player: "You",
-      avatar: "/avatars/you.png",
+      avatar: "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=facearea&w=256&h=256&facepad=2",
       bet: 15,
       maxPlayers: 2,
       currentPlayers: 1,
@@ -68,8 +68,8 @@ export function GameTables() {
               <div className="flex items-center gap-3 mb-4">
                 <div className="relative">
                   <img
-                    src={table.avatar || "/placeholder.svg?height=40&width=40"}
-                    alt={table.player}
+                    src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=facearea&w=256&h=256&facepad=2"
+                    alt="User Avatar"
                     className="w-10 h-10 rounded-full object-cover"
                   />
                   <div className="absolute -bottom-1 -right-1 bg-green-500 w-3 h-3 rounded-full border border-background"></div>
